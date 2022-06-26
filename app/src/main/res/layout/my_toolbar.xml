@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/icon_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="页面" />
+
+    <ImageView
+        android:id="@+id/iv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@id/tv_title"
+        android:src="@mipmap/icon_progress_c" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/iv_progress"
+        android:gravity="center"
+        android:textColor="@color/black"
+        tools:text="333/341" />
+
+</RelativeLayout>

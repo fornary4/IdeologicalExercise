@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExamActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="模拟考试" />
+
+        <ImageView
+            android:id="@+id/iv_submit"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@id/tv_title"
+            android:src="@drawable/img_submit" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/iv_submit"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="提交" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/lv_exam"
+        android:divider="@color/white"
+        android:dividerHeight="20dp"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

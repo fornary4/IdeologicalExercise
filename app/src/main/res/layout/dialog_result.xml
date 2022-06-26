@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成绩:"
+        android:textSize="25sp"
+        android:textColor="#ff0000"
+        android:padding="40dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/next_button"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+
+
+</LinearLayout>

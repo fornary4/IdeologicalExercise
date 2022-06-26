@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="关于" />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/icon_app" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IdeologicalExercise"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_beta" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="思政课程复习"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="© 2022 By fornary4"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="V1.0.Dev-0620"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_calculate"
+                android:text="确定"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

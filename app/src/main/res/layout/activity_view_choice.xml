@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8fefe"
+    android:orientation="vertical"
+    tools:context=".SingleChoiceActivity">
+
+    <include layout="@layout/my_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/tv_question"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/normal_button"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/normal_button"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/normal_button"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/normal_button"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:paddingStart="15dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_previous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/next_button"
+        android:padding="5dp"
+        android:text="上一题" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/next_button"
+        android:padding="5dp"
+        android:text="下一题" />
+
+
+
+
+</LinearLayout>
