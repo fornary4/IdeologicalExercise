@@ -93,7 +93,7 @@ public class ListExamAdapter extends BaseAdapter {
                     });
                 }
             } else {
-                tv_question.setText(String.format("%d.%s", position + 1, multipleList.get(list.get(position)).problem));
+                tv_question.setText(String.format("%d.%s", position + 1, multipleList.get(list.get(position)).problem) + "(多选题)");
                 option_A.setText(multipleList.get(list.get(position)).A);
                 option_B.setText(multipleList.get(list.get(position)).B);
                 option_C.setText(multipleList.get(list.get(position)).C);

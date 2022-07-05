@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class FileUtil {
-    static Gson gson = new Gson();
+    public static Gson gson = new Gson();
     public static String readJson(Context context, String name) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
